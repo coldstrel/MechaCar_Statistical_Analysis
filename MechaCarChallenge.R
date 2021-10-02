@@ -18,3 +18,20 @@ suspension_summary <- suspension %>% summarize(Mean=mean(PSI),Median=(PSI),Varia
 
 # create a lot summary using the group by function
 lot_summary <- suspension %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=(PSI),Variance=var(PSI),SD=sd(PSI))
+
+
+## Derivable N.3
+
+# T test on all lots 
+t.test(suspension$PSI,mu = 1500)
+
+# T test in lot 1 
+t.test(subset(suspension, Manufacturing_Lot=="Lot1")$PSI, mu=1500)
+# T test in lot 2
+t.test(subset(suspension, Manufacturing_Lot=="Lot2")$PSI, mu=1500)
+# T test in lot 3
+t.test(subset(suspension, Manufacturing_Lot=="Lot3")$PSI, mu=1500)
+
+
+
+

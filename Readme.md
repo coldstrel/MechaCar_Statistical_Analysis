@@ -26,3 +26,44 @@ Here we got the summary of our linear regression, where we can see the Pr(>|t|) 
 
 
 ---------------
+## Summary Statistics on Suspension Coils
+
+First we are going to create a sumary using the PSI column to show the median, mean, variance and standard deviation.
+
+![alt text](resources/Screenshot_2.png)
+
+Here we got the mean, median, variance and standard deviation using as we saw the PSI column. 
+
+Then, we got the lot_summary using the group by function and we get the results.
+
+![alt text](resources/Screenshot_3.png)
+
+- The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+    - The problem is that in Lot 3 are shown a lot of variance, most of the data is X>100 when in the Lot 1 and 2 is less than 10. 
+
+--------------------------------------------------------
+
+## T-Tests on Suspension Coils
+The lot 3 has a mean different from the other two it differs aprox 4 between the others. 
+And the t of the third lot is a negative value so it differs from the other two *lots*
+
+--------------------------------------------------------
+## Study Design: MechaCar vs Competition
+I think that it is important for the costumer to feel secure when driving a car and know the number of airbags and where they are located. 
+
+- What metric or metrics are you going to test?
+    - The number of airbags in the vehicle and show the deviation when a vehicle has a less airbags than the others and if there are vehjicles with more or less airbags than the other ones.
+
+- What is the null hypothesis or alternative hypothesis?
+    - The hypothesis is that every vehicle has 4 or even more airbags, this way we can see if a vehicle is safe or not.
+- What statistical test would you use to test the hypothesis? And why?
+    - The summary will show the median and the mode, this way we see if there are more or less 4 airbags.
+
+- What data is needed to run the statistical test?
+    - The number of airbags by vehicle and the total of vehicles.
+
+
+
+
+
+
