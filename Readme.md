@@ -24,6 +24,7 @@ Here we got the summary of our linear regression, where we can see the Pr(>|t|) 
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
     - No because the multiple R squared value is 0.71 which give us a 71% meaning it cannot give us am effective prediction of Mechacar prototypes.
 
+![alt text](resources/Screenshot_4.png)
 
 ---------------
 ## Summary Statistics on Suspension Coils
